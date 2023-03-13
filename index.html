@@ -5,11 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprender CSS</title>
+    <!--Adicionando no head o elemento 'style' (em baixo), podemos determinar para a página web, o que queremos atribuir (estilizar) para cada elemento e não necessáriamente localmente em cada elemento em particular.De relembrar que se quiser depois disto atribuir nova estilização em particular em determinados elementos, teremos que o fazer in-line, ou seja, fora do padrão selecionado no 'head'.-->
+    <style>
+        body{
+            background: yellow;
+    }
+
+    h1{
+        color: blue;
+        font-size: 88px;
+    }
+    </style>
 </head>
 
 
-<body style="background: yellow"><!--inline, estilizar dentro do elemento body-->
-    <h1 style="color:blue;font-size: 88px">Meu primeiro site com CSS</h1>
-    <h1>Outro componente</h1><!--Nesta linha como não tem nenhuma estilização, aparece de uma forma padrão visual no site-->
+<body>
+    <h1>Meu primeiro site com CSS</h1>
+    <h1 style="color: red">Outro h1</h1>
+    <h2>Outro componente</h2>
+    <a href="outra.html" target="_blank">Ir para outra página</a>
 </body>
 </html>
